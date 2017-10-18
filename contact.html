@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project One - Contact</title>
+<style>
+* {
+	font-family: Arial, Verdana, sans-serif;
+	color: #665544;
+	text-align: center;}
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #473c2c; }
+#content {
+	overflow: auto; }
+#nav, #footer {
+	margin: 1%; }
+#feature {
+	margin: 1%;
+	height:10em;
+	margin-bottom: 1em;
+	background-image: url("images/contact.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 10em;
+	opacity: 0.7;
+}
+.contact1, .contact2, .contact3, .contact4{
+	width: 23%;
+	float: left;
+	margin: 1%;
+}
+.contact5 {
+	width: 23%;
+	margin: 1%;
+	float:right;
+}
+
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%; }
+.column3, .contact4 {
+	margin-right: 0%;}
+.columnwide {
+	width: 65%;
+	float:left;
+	margin: 1%;
+}
+li {
+	display: inline;
+	padding: 0.5em; }
+li a {
+	text-decoration: none;
+}
+
+li a:hover{
+	color: #fdd96a;
+	opacity: none;
+	 -moz-transition:color .2s linear;
+    -o-transition:color .2s linear;
+    -webkit-transition:color .2s linear;
+}
+#nav, #footer {
+	background-color: rgba(239,239,239,0.5);
+	padding: 0.5em 0;
+}
+.articleform {
+	height: 32em;
+	margin-bottom: 1em;
+	background-color: #958172;}
+.article {
+	height: 8em;
+	margin-bottom: 1em;
+	background-color: #958172;}
+.article2 {
+	height: 8em;
+	margin-bottom: 1em;
+	background-color: #958172;}
+.imgcontact {
+	max-height: 100%;
+	max-width: 100%;
+	margin: auto;
+	display: block;
+}
+.center{
+	text-align: center;
+}
+input, textarea {
+	border-bottom: 1px dotted #dcdcdc;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	padding: 5px;
+	width: 70%;
+	margin-bottom: 20px;}
+input:focus, textarea:focus {
+	border: 1px dotted #dcdcdc;
+	outline: none;}
+input#submit {
+	color: #ffffff;
+	background-color: #665544;
+	border: none;
+	border-radius: 5px;
+	width: 80px;}
+input#submit:hover {
+	color: #665544;
+	background-color: #efefef;}
+fieldset {
+	width: 80%;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: left;}
+legend {
+	background-color: #efefef;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	padding: 10px 20px;
+	text-align: left;
+	text-transform: uppercase;}
+</style>
+</head>
+<body>
+	<div  id="header">
+		<h1>Logotyp</h1>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Projects</a></li>
+				<li><a href="html-exercises.html">Exercises</a></li>	
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html" style="color: rgba(239,239,239,0.5">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div id="feature"></div>
+		<br>
+		<div class="">
+		<div class="article2 contact1">
+			<a href="https://www.facebook.com/sir.elton" target="_blank"><img class="imgcontact" src="images/facebook.png" /></a>
+		</div>
+		<div class="article2 contact2">
+			<a href="http://www.instagram.com/fitnessgrisen" target="_blank"><img class="imgcontact" src="images/instagram.png" /></a>
+		</div>
+		<div class="article2 contact3">
+			<a href="http://linkedin.com/in/jonas-ekstr%C3%B6m-3b783a134" target="_blank"><img class="imgcontact" src="images/linkedin.png" /></a>
+		</div>
+		<div class="article2 contact4">
+			<a href="http://www.twitter.com/fitnessgrisen" target="_blank"><img class="imgcontact" src="images/twitter.png" /></a>
+		</div>
+		</div>
+		<br>
+		<div>
+		<div class="article2 contact4">
+			<a href="https://jonasekstrom.github.io/demo-html/" target="_blank"><img class="imgcontact" src="images/github.png" /></a>
+		</div>
+		<div class="article2 contact5">
+			<a href="http://www.facebook.com"><img class="imgcontact" src="images/github.png" /></a>
+		</div>
+	</div>
+		<br>
+		<div class="articleform columnwide">
+			<form>
+				<fieldset>
+					<legend>Email:</legend>
+					<label for="name">Name: </label><br><input type="text" id="name" /><br>
+					<label for="email">Email: </label><br><input type="text" id="email" /><br>
+					<label for="subject">Subject:</label><br><textarea id="subject" name="subject" placeholder="What can i help you with...." style="height:200px; text-align: left;"></textarea><br>
+					<input type="submit" value="Submit" id="submit" style="float:right" />
+				</fieldset>
+			</form>
+		</div>
+		<div class="article column3"><img class="imgcontact" src="images/email.png" /> 
+		</div>
+	</div>
+	<div id="footer">
+		<p>&copy; Copyright 2017-</p>
+	</div>
+
+</body>
+</html>

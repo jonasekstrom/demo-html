@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project One</title>
+<style>
+* {
+	font-family: Arial, Verdana, sans-serif;
+	color: #665544;
+	text-align: center;}
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #473c2c; }
+#content {
+	overflow: auto; }
+#nav, .feature2, #footer {
+	margin: 1%; }
+#feature {
+	margin: 1%;
+	height:10em;
+	margin-bottom: 1em;
+	background-image: url("images/frontend.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.7;}
+
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%; }
+.column3 {
+	margin-right: 0%;}
+li {
+	display: inline;
+	padding: 0.5em; }
+li a {
+	text-decoration: none;
+}
+
+li a:hover{
+	color: #fdd96a;
+	opacity: none;
+	 -moz-transition:color .2s linear;
+    -o-transition:color .2s linear;
+    -webkit-transition:color .2s linear;
+
+}
+#bgbild{
+	background-image: url(images/computer.jpg);
+	opacity: 0.2;
+	position: relative;
+}
+#nav, #footer {
+	background-color: rgba(239,239,239,0.5);
+	padding: 0.5em 0;
+}
+.feature2, .article {
+	height: 10em;
+	margin-bottom: 1em;
+	background-color: #efefef;}
+</style>
+</head>
+<body>
+	<div  id="header">
+		<h1>Logotyp</h1>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Projects</a></li>
+				<li><a href="html-exercises.html">Exercises</a></li>	
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		
+		<div id="feature"></div>
+		<br>
+		<div class="article column1">
+			<p>Welcome<br /> Here you will find my upcoming projects and also projects that are final</p>
+		</div>
+		<div class="article column2">
+			<p>Slider to display recent projects</p>
+		</div>
+		<div class="article column3">
+			<p>Feel free to roam around the website and if you you have any questions dont be afraid to <a href src="contact.html" style="text-decoration: none">contact</a> me.</p>
+		</div>
+	</div>
+	<div class="feature2">
+		<p>Dont know what to put here yet.. Maybe a useless ad or something clickbaity =)</p>
+	</div>
+	<div id="footer">
+		<p>&copy; Copyright 2017-</p>
+	</div>
+
+</body>
+</html>
