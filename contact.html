@@ -1,183 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Project One - Contact</title>
-<style>
-* {
-	font-family: Arial, Verdana, sans-serif;
-	color: #665544;
-	text-align: center;}
-body {
-	width: 90%;
-	margin: 0 auto;
-	background-color: #473c2c; }
-#content {
-	overflow: auto; }
-#nav, #footer {
-	margin: 1%; }
-#feature {
-	margin: 1%;
-	height:10em;
-	margin-bottom: 1em;
-	background-image: url("images/contact.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 10em;
-	opacity: 0.7;
-}
-.contact1, .contact2, .contact3, .contact4{
-	width: 23%;
-	float: left;
-	margin: 1%;
-}
-.contact5 {
-	width: 23%;
-	margin: 1%;
-	float:right;
-}
-
-.column1, .column2, .column3 {
-	width: 31.3%;
-	float: left;
-	margin: 1%; }
-.column3, .contact4 {
-	margin-right: 0%;}
-.columnwide {
-	width: 65%;
-	float:left;
-	margin: 1%;
-}
-li {
-	display: inline;
-	padding: 0.5em; }
-li a {
-	text-decoration: none;
-}
-
-li a:hover{
-	color: #fdd96a;
-	opacity: none;
-	 -moz-transition:color .2s linear;
-    -o-transition:color .2s linear;
-    -webkit-transition:color .2s linear;
-}
-#nav, #footer {
-	background-color: rgba(239,239,239,0.5);
-	padding: 0.5em 0;
-}
-.articleform {
-	height: 32em;
-	margin-bottom: 1em;
-	background-color: #958172;}
-.article {
-	height: 8em;
-	margin-bottom: 1em;
-	background-color: #958172;}
-.article2 {
-	height: 8em;
-	margin-bottom: 1em;
-	background-color: #958172;}
-.imgcontact {
-	max-height: 100%;
-	max-width: 100%;
-	margin: auto;
-	display: block;
-}
-.center{
-	text-align: center;
-}
-input, textarea {
-	border-bottom: 1px dotted #dcdcdc;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	padding: 5px;
-	width: 70%;
-	margin-bottom: 20px;}
-input:focus, textarea:focus {
-	border: 1px dotted #dcdcdc;
-	outline: none;}
-input#submit {
-	color: #ffffff;
-	background-color: #665544;
-	border: none;
-	border-radius: 5px;
-	width: 80px;}
-input#submit:hover {
-	color: #665544;
-	background-color: #efefef;}
-fieldset {
-	width: 80%;
-	border: 1px solid #dcdcdc;
-	border-radius: 10px;
-	padding: 20px;
-	text-align: left;}
-legend {
-	background-color: #efefef;
-	border: 1px solid #dcdcdc;
-	border-radius: 10px;
-	padding: 10px 20px;
-	text-align: left;
-	text-transform: uppercase;}
-</style>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Jonas Ekström">
+		<title>FEU17 Web Design || Contact</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
 <body>
-	<div  id="header">
-		<h1>Logotyp</h1>
-		<div id="nav">
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">FEU17</span> Web Design</h1>
+			</div>
+		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="html-exercises.html">Exercises</a></li>	
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html" style="color: rgba(239,239,239,0.5">Contact</a></li>
-			</ul>
+				<a href="index.html"><li><span class="a-text">Home</span></li></a>
+				<a href="#"><li>Projects</li></a>
+				<a href="html-exercise.html"><li>Exercises</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="contact.html"><li class="current">Contact</li></a>
+		</nav>
 		</div>
-	</div>
-	<div id="content">
-		<div id="feature"></div>
-		<br>
-		<div class="">
-		<div class="article2 contact1">
-			<a href="https://www.facebook.com/sir.elton" target="_blank"><img class="imgcontact" src="images/facebook.png" /></a>
-		</div>
-		<div class="article2 contact2">
-			<a href="http://www.instagram.com/fitnessgrisen" target="_blank"><img class="imgcontact" src="images/instagram.png" /></a>
-		</div>
-		<div class="article2 contact3">
-			<a href="http://linkedin.com/in/jonas-ekstr%C3%B6m-3b783a134" target="_blank"><img class="imgcontact" src="images/linkedin.png" /></a>
-		</div>
-		<div class="article2 contact4">
-			<a href="http://www.twitter.com/fitnessgrisen" target="_blank"><img class="imgcontact" src="images/twitter.png" /></a>
-		</div>
-		</div>
-		<br>
-		<div>
-		<div class="article2 contact4">
-			<a href="https://jonasekstrom.github.io/demo-html/" target="_blank"><img class="imgcontact" src="images/github.png" /></a>
-		</div>
-		<div class="article2 contact5">
-			<a href="http://www.facebook.com"><img class="imgcontact" src="images/github.png" /></a>
-		</div>
-	</div>
-		<br>
-		<div class="articleform columnwide">
-			<form action="mailto:dc3bation@hotmail.com" method="post" enctype="text/plain">
-				<fieldset>
-					<legend>Email:</legend>
-					<label for="name">Name: </label><br><input type="text" id="name" /><br>
-					<label for="email">Email: </label><br><input type="text" id="email" /><br>
-					<label for="subject">Subject:</label><br><textarea id="subject" name="subject" placeholder="What can i help you with...." style="height:200px; text-align: left;"></textarea><br>
-					<input type="submit" value="Submit" id="submit" style="float:right" />
-				</fieldset>
+	</header>
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe to my Newsletter</h1>
+			<form>
+				<input type="email" placeholder="Enter email...">
+				<button type="submit" class="button1">Subscribe</button>
 			</form>
 		</div>
-		<div class="article column3"><img class="imgcontact" src="images/email.png" /> 
-		</div>
-	</div>
-	<div id="footer">
-		<p>&copy; Copyright 2017-</p>
-	</div>
+	</section>
+
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+				<h1 class="page-title">Services</h1>
+				<ul id="services">
+					<li>
+						<h3>Website Design</h3>
+						<p>Website design and development that includes branding, search engine optimization, and a focus on visitor conversions. While FEU17 Web Design use technology and code, FEU17 Web Design focus on the customer journey and the user experience. FEU17 Web Design web design projects start at the search engine results page and migrate through content and call to actions. FEU17 Web Design want to help to help you create a digital transformation that is focused on your customer, their experience, and how this journey delivers revenue and ROI to you and your organization.<br>
+
+						From a simple brochure website to an advanced e-Commerce solution with an integrated forum or membership website, FEU17 Web Design can create the ultimate solution to meet your marketing goals and objectives. If you have something unique you’d like to create, FEU17 Web Design will produce a customized solution that can include custom post types, taxonomies, APIs, and/or plugins designed and coded specifically for your project requirements.<br>
+
+						All of FEU17 Web Design custom website design and development projects follow a structured process that helps FEU17 Web Design execute your project on-time and on-budget..</p>
+						<p>Pricing €1000 - €5000</p>
+					</li>
+					<li>
+						<h3>Website Maintenance</h3>
+						<p>Regardless of your industry or the size of your company, a website maintenance plan is key to the ongoing success of your website. In order to attract and retain customers, maintain search engine rankings, and provide information about your products and services to the public, your company needs website maintenance.<br>
+
+						As Internet trends and technologies are constantly evolving and your business continues to grow, FEU17 Web Design website maintenance ensure your site evolves with changing demands of visitors. Because this is also a website maintenance company, FEU17 Web Design know all of the concepts that will help your website stay strong as the Internet evolves..<br>
+						 FEU17 Web Design offers only one maintenance package that can address these needs. Whether you need to fix a bug or plan to add and update content with a website maintenance plan, FEU17 Web Design can help you keep your site up-to-date and running smoothly. No hidden fees.</p>
+						<p>Pricing €500/month</p>
+					</li>
+					<li>
+						<h3>Website Hosting</h3>
+						<p>FEU17 Web Design know that finding a affordable, reliable web host is not a simple task, so FEU17 Web Design put all the information you need in one place to help you make your decision. At Just Host, FEU17 Web Design pride ourselves on our commitment to our customers, and FEU17 Web Design want to make sure they have all the details they need before making that big decision.</p>
+						<p>Pricing €10/month - released Q2 2018</p>
+					</li>
+				</ul>
+
+			</article>
+
+			<aside id="sidebar">
+				<div class="dark">
+					<h3>Contact me</h3>
+					<form class="contact">
+						<div>
+							<label>Name</label><br>
+							<input type="text" name="name" placeholder="Name">
+						</div>	
+						<div>
+							<label>Email</label><br>
+							<input type="email" name="email" placeholder="Email adress">
+						</div>
+						<div>
+							<label>Message</label><br>
+							<textarea placeholder="Message"></textarea>
+						</div>
+						<button type="submit" class="button1">Send</button>
+					</form>	
+				</div>
+				<div class="container">
+					<div class="dark">
+						<div class="box2">
+							<a href="https://www.facebook.com/sir.elton" target="_blank"><img src="./img/facebook.png" /></a>
+							<a href="http://www.instagram.com/fitnessgrisen" target="_blank"><img src="./img/instagram.png" /></a>
+						</div>
+						<div class="box2">
+							<a href="http://linkedin.com/in/jonas-ekstr%C3%B6m-3b783a134" target="_blank"><img src="./img/linkedin.png" /></a>
+							<a href="http://www.twitter.com/fitnessgrisen" target="_blank"><img src="./img/twitter.png" /></a>
+						</div>
+						<div class="box2">
+							<a href="https://jonasekstrom.github.io/demo-html/" target="_blank"><img src="./img/github.png" /></a>
+						</div>
+					</div>		
+				</div>	
+			</aside>
+
+		</div>	
+	</section>
+
+	<footer>
+		<p> FEU17 Web Design, Copyright &copy; 2017 </p>
+	</footer>
 
 </body>
 </html>

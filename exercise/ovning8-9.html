@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head> <!--9 Skriv HTML och CSS som testar följande uttryck. Din HTML-kod behöver alltså innehålla åtminstone taggarna p, div, span, ul, li och klasserna kategori, diagram och hello. När du är klar, jämför med en granne. Har ni löst uppgiften på samma sätt?
+1 p span					6 p > span
+2 .kategori .diagram		7 .diagram span
+3 p, div:hover				8 p.kategori
+4 li + li					9 li:last-child					
+5 [class*="sub"]				10 ul > li:nth-child(3).hello-->
+	<meta charset="utf-8">
+	<title>Övning 8.9</title>
+
+<style>
+p > span {
+	font-style: italic;
+	font-weight: bold;
+	font-family: fantasy; ;
+}
+
+.kategori{
+	border-style: groove; 
+	border-color: blue;
+	background-color: hotpink;
+}
+
+.diagram {
+
+}
+p, div:hover {
+	border-color: red;
+	background-color: lightgrey;
+	color: white;
+}
+.span1 {
+	font-family: Times;
+	color: blue;
+}
+.span2 {
+	color: hotpink;
+}
+li + li {
+	color: green;
+}
+li:last-child {
+	color:hotpink;
+}
+</style>
+</head>
+<body>
+<p>Skriv HTML och CSS som testar följande uttryck. Din HTML-kod <span class="span1">behöver</span> alltså innehålla åtminstone taggarna p, div, span, ul, li och klasserna kategori, diagram och hello. När du är klar, jämför med en granne. Har ni löst uppgiften på samma sätt?
+	<div>
+<p>Skriv HTML och CSS som testar följande uttryck. Din HTML-kod behöver alltså innehålla åtminstone <span class="span2">taggarna</span> p, div, span, ul, li och klasserna kategori, diagram och hello. När du är klar, jämför med en granne. Har ni löst uppgiften på samma sätt?
+</div></p>
+
+<p class="kategori">Skriv HTML och CSS som testar följande uttryck. Din HTML-kod behöver alltså innehålla åtminstone taggarna p, div, span, ul, li och klasserna kategori, diagram och hello. När du är klar, jämför med en granne. Har ni löst uppgiften på samma sätt?</p>
+
+<ul>
+	<li>Item1</li>
+	<li>Item2</li>
+	<li>Item3</li>
+</ul>
+
+</body>
+</html>

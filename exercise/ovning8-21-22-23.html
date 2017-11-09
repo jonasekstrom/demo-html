@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Övning 8-21-22-23</title>
+</head>
+<style>
+
+nav {
+	float:left;
+	
+}
+
+}
+nav ul {
+	list-style: none;
+	padding: none;
+	position: absolute;
+}
+
+nav ul a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav li:hover {
+	background-color: black;
+}
+nav li {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: ivory;
+	font-size: 20px;
+	border: none;
+	list-style: none;
+}
+
+ fieldset, form {
+ 	background-color: hotpink;
+ 	margin:5px;
+ 	width: 50%;
+ 	clear: both;
+ }
+ body {
+ 	background-color: hotpink;
+ }
+
+ .half input{
+ 	width: 50px;
+ }
+
+pre {
+	font-size: 28px;
+}
+</style>
+<body>
+	<nav>
+		
+		<ul>
+		<a href src="http://www.google.com"><li>Home</li></a>
+		<a href src="http://www.google.com"><li>Not Home</li></a>
+		<a href src="http://www.google.com"><li>Almost Home</li></a>
+		</ul>
+	</nav>
+		<fieldset>
+			<legend>Contact details</legend>
+			<label>Firstname:<br/>
+			<input type="text" name="Firstname" /></label><br/>
+			<label>Surname:<br/>
+			<input type="text" name="Surname" /></label><br/>
+			<label>Adress:<br/>
+			<input type="text" name="adress" /><br>
+			<input type="text" name="adress2" /><br>
+			<input type="text" name="adress3" /></label><br>
+			<label>Zip/Postal Code:<br/>
+			<input type="text" name="zipcode" /></label><br>
+			<label>City:<br>
+			<input type="text" name="city" /></label><br/>
+		</fieldset>
+
+
+
+		<fieldset>
+			<legend>Any special shipping details?</legend>
+		<form action="http://www.example.com/comments.php">
+			
+			<textarea name="comments" cols="20" rows="4" placeholder="Enter your details..."></textarea>
+		</form>
+		</fieldset>
+		<fieldset>
+			<legend>Choose your payment:</legend>
+		<form action="http://www.example.com/profile.php">
+			
+			<select name="payment">
+				<option value="VISA" selected="selected">VISA</option>
+				<option value="AmericanExpress">American Express</option>
+				<option value="Paylpay">Paypal</option>
+				<option value="Swish">Swish</option>
+			</select>
+			<br>
+			<label>Cardnumber:<br>
+			<input type="numer" name="cardnumber" maxlength="12" /></label><br>
+			<label>CCV:<br>
+				<input type="number" name="ccv" maxlength="3" /></label><br>
+			<label class="half">Card expires:<br>
+			<input type="number" name="month" min="1" max="12" step="1" /> / <input type="number" name="year" min="0" max="99" step="1" /></label>
+
+		</form>
+		</fieldset>
+		<br>
+		<form action="http://www.example.org/purchase.php">
+			<button>Confirm Purchase</button>
+		</form>
+<br>
+<pre>
+	Rangordna selektorer efter prioritet
+
+.one > #something li 	<-- 111
+.one .two .three 		<-- 30
+div.classy ul li 		<-- 13
+div > :hover 			<-- 11
+:hover 					<-- 10
+div div 				<-- 2
+p 						<-- 1
+* 						<-- 0
+</pre>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Övning 8-16</title>
+</head>
+<body>
+	<pre>&lt;body&gt; <-- ingen sluttagg på body-->
+	&lt;style&gt; ul { border: black solid 1px; } &lt;/style&gt; <--//ska vara inom headtaggen eller i elementet. värdena för border är i omvänd ordning -->
+	&lt;ul&gt;
+		&lt;li&gt;first item&lt;/li&gt;
+		&lt;li&gt;&lt;span class="strongly&gt;second item&lt;/li&gt;   <-- // saknas citationstecken efter classnamnet. Classnamn finns inte i stylesheet -->
+	&lt;/ol&gt; <-- unordered list avslutas inte med en orderslist sluttagg. -->
+	&lt;div id="popup"&gt;Message that should be fixed in a corner&lt;div/> <--  felaktig sluttagg och id finns ej i stylesheet-->
+	&lt;div id="layout"&gt; <-- id finns inte i något stylesheet-->
+		&lt;main/&gt; <--- // main har ingen shorttag -->
+			&lt;section&gt; &lt;h1&gt;The best images&lt;/h1&gt;
+				&lt;p&gt; Here's my favourite image:
+					&lt;img>http('server.com/image.gif')&lt;/img&gt; <-- bilden länkas på fel sätt -->
+				&lt;/p&gt; &lt;!-- to do: add some more images // kommentar ofullständig. saknar sluttagg -->
+			&lt;/section&gt;
+	&lt;/main&gt; <-- Finns ingen starttagg -->
+		&lt;aside&gt;&lt;/aside&gt; <-- inget innehåll i denna tag.-->
+	&lt;/div&gt;
+	&lt;span&gt;In conclusion: &lt;p&gt;To do&lt;/p&gt; &lt;/span&gt;<-- span och p taggar ska byta plats -->
+	&lt;/html&gt;<-- ingen starttagg på html-->
+&lt;!-- allt detta saknas
+&lt;!DOCTYPE html&gt;
+
+&lt;head&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;/head&gt;
+-->
+18st fel av minst 12
+</pre>
+
+</body>
+</html>
+

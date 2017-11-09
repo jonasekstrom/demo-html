@@ -1,98 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Project One</title>
-<style>
-* {
-	font-family: Arial, Verdana, sans-serif;
-	color: #665544;
-	text-align: center;}
-body {
-	width: 90%;
-	margin: 0 auto;
-	background-color: #473c2c; }
-#content {
-	overflow: auto; }
-#nav, .feature2, #footer {
-	margin: 1%; }
-#feature {
-	margin: 1%;
-	height:10em;
-	margin-bottom: 1em;
-	background-image: url("images/frontend.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	opacity: 0.7;}
-
-.column1, .column2, .column3 {
-	width: 31.3%;
-	float: left;
-	margin: 1%; }
-.column3 {
-	margin-right: 0%;}
-li {
-	display: inline;
-	padding: 0.5em; }
-li a {
-	text-decoration: none;
-}
-
-li a:hover{
-	color: #fdd96a;
-	opacity: none;
-	 -moz-transition:color .2s linear;
-    -o-transition:color .2s linear;
-    -webkit-transition:color .2s linear;
-
-}
-#bgbild{
-	background-image: url(images/computer.jpg);
-	opacity: 0.2;
-	position: relative;
-}
-#nav, #footer {
-	background-color: rgba(239,239,239,0.5);
-	padding: 0.5em 0;
-}
-.feature2, .article {
-	height: 10em;
-	margin-bottom: 1em;
-	background-color: #efefef;}
-</style>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Jonas Ekström">
+		<title>FEU17 Web Design || Welcome</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
 <body>
-	<div  id="header">
-		<h1>Logotyp</h1>
-		<div id="nav">
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">FEU17</span> Web Design</h1>
+			</div>
+		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="html-exercises.html">Exercises</a></li>	
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+				<a href="index.html"><li class="current"><span class="a-text">Home</span></li></a>
+				<a href="#"><li>Projects</li></a>
+				<a href="html-exercise.html"><li>Exercises</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="contact.html"><li>Contact</li></a>
+		</nav>
 		</div>
-	</div>
-	<div id="content">
-		
-		<div id="feature"></div>
-		<br>
-		<div class="article column1">
-			<p>Welcome<br /> Here you will find my upcoming projects and also projects that are final</p>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Proffessional Web Design</h1>
+			<p>I’m a skilled in many areas of design and development. .</p>
 		</div>
-		<div class="article column2">
-			<p>Slider to display recent projects</p>
+	</section>
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe to my Newsletter</h1>
+			<form>
+				<input type="email" placeholder="Enter email...">
+				<button type="submit" class="button1">Subscribe</button>
+			</form>
 		</div>
-		<div class="article column3">
-			<p>Feel free to roam around the website and if you you have any questions dont be afraid to <a href src="contact.html" style="text-decoration: none">contact</a> me.</p>
-		</div>
-	</div>
-	<div class="feature2">
-		<p>Dont know what to put here yet.. Maybe a useless ad or something clickbaity =)</p>
-	</div>
-	<div id="footer">
-		<p>&copy; Copyright 2017-</p>
-	</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="./img/device2.png">
+				<h3>HTML5 Markup</h3>
+				<p>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</p>
+			</div>
+			<div class="box">
+				<img src="./img/device2.png">
+				<h3>CSS3 Styling</h3>
+				<p>CSS3 is the new kid in the stylesheet family. It offers exciting new possibilities to create an impact with your designs, allows you to use more diverse style sheets for a variety of occasions and lots more.</p>
+			</div>
+			<div class="box">
+				<img src="./img/device2.png">
+				<h3>Graphic Design</h3>
+				<p>Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration. The field is considered a subset of visual communication and communication design. </p>
+			</div>
+		</div>	
+	</section>
+
+	<footer>
+		<p> FEU17 Web Design, Copyright &copy; 2017 </p>
+	</footer>
 
 </body>
 </html>
